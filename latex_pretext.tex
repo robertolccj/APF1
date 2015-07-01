@@ -1,0 +1,49 @@
+
+%== Iniciar Marca D'água (Water Mark)
+%== Necessário: "\usepackage{eso-pic}"
+%== Necessário: configurar "BackgorundPic"
+\AddToShipoutPicture{\BackgroundPic} 
+
+
+%== Gerar capa
+\imprimircapa
+
+
+%== Folha de rosto
+%== O * indica que haverá a ficha bibliográfica.
+% \imprimirfolhaderosto*
+\imprimirfolhaderosto
+
+
+%== Inserir Prefácio (ambiente 'resumo')
+\begin{resumo}[Prefácio]
+A Física é uma Ciência que exerce profunda influência em muitas outras áreas do saber, tais como a Engenharia, a Biologia, a Química, etc. Estudar os fenômenos físicos é de vital importância para a compreensão dos princípios que regem o mundo e desenvolver a habilidade de trabalhar com eles, aplicando-os para tornar o abstrato em concreto: é a essência da tecnologia. 
+Planejamos esta apostila como objeto de apoio ao estudante, visando o ensino mais eficiente, produtivo, interessante e agradável.
+Temos, contudo, a ciência de que sempre podemos melhorar, mas, para isso, precisamos da colaboração de cada estudante que venha usufruir deste curso, concedendo-nos suas críticas e sugestões.
+\vspace{1cm}                            
+\hfill Os professores.
+\end{resumo}
+
+
+%== Inserir lista de ilustrações.
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+
+
+%== Inserir lista de tabelas.
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage
+
+
+%== Inserir o sumario.
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+
+
+%== Elementos Textuais.
+\textual
+
+%Fim
